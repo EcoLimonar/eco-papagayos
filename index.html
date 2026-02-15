@@ -1,0 +1,288 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Papagayos | Crónicas de El Limonar</title>
+    
+    <!-- Meta Tags para SEO -->
+    <meta name="description" content="Eco Papagayos: La historia de resiliencia y amor detrás de Eco Hotel El Limonar. Un legado de 13 años en los Montes de María.">
+    
+    <!-- Recursos Externos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            --verde-limon: #2B4C0B; /* Verde Oliva/Limon */
+            --verde-vibrante: #7CB342;
+            --amarillo-citrico: #F4FF81;
+            --crema: #FAFAF2;
+        }
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: var(--crema); 
+            color: var(--verde-limon);
+            line-height: 1.8;
+        }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        
+        /* Estilo Editorial: Letra Capitular del Inicio */
+        .article-body p:first-of-type::first-letter {
+            font-family: 'Playfair Display', serif;
+            float: left;
+            font-size: 5rem;
+            line-height: 1;
+            padding-right: 1.2rem;
+            color: var(--verde-vibrante);
+            font-weight: 700;
+        }
+
+        /* Iniciales monumentales para el cierre (S, R, H y P) */
+        .capitular-cierre {
+            font-family: 'Playfair Display', serif;
+            float: left;
+            font-size: 3.5rem; 
+            line-height: 0.8;
+            padding-right: 0.8rem;
+            padding-top: 0.5rem;
+            color: var(--verde-vibrante);
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .capitular-cierre {
+                font-size: 2.8rem;
+                padding-right: 0.6rem;
+            }
+        }
+
+        .img-card {
+            border-radius: 2.5rem;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .img-card:hover { 
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(43, 76, 11, 0.15);
+        }
+
+        .btn-back {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(43, 76, 11, 0.1);
+        }
+        .btn-back:hover {
+            background: var(--verde-limon);
+            color: white;
+            transform: translateX(-5px);
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: var(--verde-vibrante);
+            margin: 2rem auto;
+        }
+
+        .fade-in-section {
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Limpieza del sello circular y elementos con fondo negro */
+        .sello-limpio {
+            mix-blend-mode: screen; 
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navegación Superior -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="btn-back px-5 py-2 rounded-full text-[9px] font-black uppercase tracking-[0.2em] flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left"></i> Volver al Portal
+            </a>
+            <div class="hidden md:block text-center flex-1">
+                <span class="text-[9px] font-black uppercase tracking-[0.4em] text-verde-vibrante">Eco Papagayos • Memoria Viva</span>
+            </div>
+            <!-- Logo Superior Derecho (Marca principal) -->
+            <img src="https://lh3.googleusercontent.com/d/1ztBfLJJwmhC1V2Ui0JRY9HKTllaUpkoR" alt="Logo El Limonar Superior" class="w-24 md:w-32 object-contain">
+        </div>
+    </nav>
+
+    <div class="h-24"></div>
+
+    <!-- Header Editorial -->
+    <header class="py-24 px-6 text-center fade-in-section">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-center items-center gap-4 mb-6">
+                <div class="h-px w-12 bg-verde-vibrante/30"></div>
+                <span class="text-verde-vibrante font-bold tracking-[0.6em] uppercase text-[9px]">Crónicas de El Limonar</span>
+                <div class="h-px w-12 bg-verde-vibrante/30"></div>
+            </div>
+            <!-- Título en dos líneas -->
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-[#2B4C0B]">
+                13 años sembrando vida<br>
+                <span class="italic text-verde-vibrante font-normal">El Legado de nuestro Padre</span>
+            </h1>
+            <div class="divider"></div>
+            <p class="text-[11px] uppercase tracking-[0.4em] font-semibold opacity-50 mb-4 text-balance">Volumen 01 • Febrero 2026</p>
+        </div>
+    </header>
+
+    <!-- Imagen Principal (Portada Impactante) -->
+    <section class="max-w-7xl mx-auto px-6 mb-24">
+        <div class="img-card h-[65vh] relative group">
+            <img src="https://lh3.googleusercontent.com/d/1oxGNbzhi_7kgZj3Awl_rUpuDRNsT7EqN" alt="Paisaje El Limonar" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#2B4C0B]/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-12 left-12 right-12 text-white">
+                <h4 class="text-2xl font-bold mb-2 uppercase tracking-widest">Horizontes de Paz</h4>
+                <p class="italic text-sm opacity-90 max-w-xl">El entorno natural que cobija nuestra historia y el legado que hoy florece.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cuerpo del Relato -->
+    <article class="max-w-3xl mx-auto px-6 pb-20 article-body text-gray-700">
+        <!-- El Limonar resaltado con itálica y comillas tipográficas simétricas -->
+        <p class="text-2xl mb-12 leading-relaxed font-light italic text-[#2B4C0B] border-l-4 border-verde-vibrante pl-8 text-balance">
+            <span class="text-4xl lg:text-5xl font-bold align-middle">“</span><strong class="text-3xl lg:text-4xl font-bold italic">El Limonar</strong> no nació de un plan de negocios frío, nació de un sueño que la violencia intentó congelar, pero que la tierra se encargó de proteger.<span class="text-4xl lg:text-5xl font-bold align-middle">“</span>
+        </p>
+
+        <p class="mb-8 text-lg">
+            A finales de los años 80, los Montes de María eran el escenario de un anhelo sencillo y profundo. Nuestro Padre imaginaba sus días de retiro como el comienzo de una nueva faceta: ser el anfitrión de su propio eco hotel. No solo sembraba árboles; experimentaba con la tierra, logrando mediante esquejes el híbrido perfecto de limón mandarino que hoy caracteriza nuestra finca.
+        </p>
+
+        <p class="mb-12 text-lg">
+            Aquellos limones en los años 90 ya entregaban sus primeros frutos, como si la tierra quisiera agradecerle su entrega anticipadamente; sin embargo, la cruenta violencia de los siguientes años suspendió aquel sueño, llevándoselo consigo. Tuvimos que partir, dejando atrás la tierra y los árboles sembrados que ya conocían el sabor de su cosecha; vivimos trece años fuera, con el corazón anclado en la distancia.
+        </p>
+    </article>
+
+    <!-- Sección de Biodiversidad (Guardianes del Aire) -->
+    <section class="bg-white py-24 mb-24 border-y border-gray-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="w-full md:w-1/2">
+                    <div class="img-card h-[500px]">
+                        <!-- Se sustituye la imagen por la del ave en su entorno natural -->
+                        <img src="https://lh3.googleusercontent.com/d/1-ashIeBU5SSER_RJXRKZEylyBLXcvKH9" alt="Ave guardiana en El Limonar" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <span class="text-verde-vibrante font-black tracking-widest uppercase text-[10px] mb-4 block">El Porqué de nuestro nombre</span>
+                    <h2 class="text-4xl font-bold text-[#2B4C0B] mb-8 italic text-balance uppercase leading-tight">Eco Papagayos: <br>Los guardianes del aire</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Nuestra bitácora lleva este nombre en honor a las aves que nunca abandonaron la finca. Mientras nosotros estábamos lejos, ellos siguieron cuidando los frutos de aquel limón mandarino. Hoy, su canto es la banda sonora de nuestro hotel y el símbolo de la libertad que hemos recuperado.
+                    </p>
+                    <div class="flex items-center gap-4 text-[#2B4C0B]">
+                        <div class="w-10 h-10 rounded-full bg-verde-vibrante/10 flex items-center justify-center">
+                            <i class="fa-solid fa-feather-pointed"></i>
+                        </div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest">Santuario de Aves Montes de María</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de la Memoria (Actualizada) -->
+    <section class="max-w-6xl mx-auto px-6 mb-32">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-[#2B4C0B]">Galería de la Memoria</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 text-center">
+            <!-- Slot 1: El despertar -->
+            <div class="space-y-4">
+                <div class="img-card h-80">
+                    <img src="https://lh3.googleusercontent.com/d/1DM6DHMdYnOEZRbLx8fsADmJhL0qoc7nw" alt="El despertar de El Limonar" class="w-full h-full object-cover">
+                </div>
+                <h5 class="text-xs font-bold uppercase tracking-widest opacity-60">El despertar de la tierra</h5>
+            </div>
+            <!-- Slot 2: Detalles de la siembra -->
+            <div class="space-y-4">
+                <div class="img-card h-80">
+                    <img src="https://lh3.googleusercontent.com/d/1AD2VSq1Ue4aICmydI9LItLANcEwEuHjD" alt="Detalle de la siembra" class="w-full h-full object-cover">
+                </div>
+                <h5 class="text-xs font-bold uppercase tracking-widest opacity-60">Frutos de la paciencia</h5>
+            </div>
+            <!-- Slot 3: La paz encontrada -->
+            <div class="space-y-4">
+                <div class="img-card h-80">
+                    <img src="https://lh3.googleusercontent.com/d/1KjzeOPc8Q6LCtdhlbEmc3pUVRTx6O6C8" alt="Paz en la finca" class="w-full h-full object-cover">
+                </div>
+                <h5 class="text-xs font-bold uppercase tracking-widest opacity-60">Santuario de Reposo</h5>
+            </div>
+            <!-- Slot 4: Refugio de luz -->
+            <div class="space-y-4">
+                <div class="img-card h-80">
+                    <img src="https://lh3.googleusercontent.com/d/1y8iPX3vAxiadQxYWiJEY9eKYx_btqX0w" alt="Paisaje de paz" class="w-full h-full object-cover">
+                </div>
+                <h5 class="text-xs font-bold uppercase tracking-widest opacity-60">El refugio que nos abraza</h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusión del Relato (Homenaje a los Apellidos S.R.H.P.) -->
+    <article class="max-w-3xl mx-auto px-6 pb-32 text-gray-700 text-balance">
+        <h2 class="text-4xl md:text-5xl font-bold mb-10 text-[#2B4C0B]">
+            Honra la Raíz
+        </h2>
+        
+        <!-- Párrafo S (Sembrando - Nombre) -->
+        <p class="mb-8 text-lg clear-both">
+            <span class="capitular-cierre">S</span>embrando las semillas de un porvenir donde el reencuentro con la tierra fuera el bálsamo para el alma, nuestro Padre cultivó no solo limones, sino la visión de un refugio que trascendería con el tiempo. Su fe en el territorio fue el abono que permitió que, a pesar de la tormenta, la esencia de este lugar nunca dejara de latir.
+        </p>
+
+        <!-- Párrafo R (Raíz - Primer Apellido) -->
+        <p class="mb-8 text-lg clear-both">
+            <span class="capitular-cierre">R</span>aíz de nuestra identidad, en el año 2010 decidimos que el silencio de trece años ya era suficiente. Regresamos para hacer del sueño de papá una realidad tangible. Al volver, descubrimos que los limones que él sembró con sus propias manos no solo habían sobrevivido, sino que se habían convertido en árboles fuertes, listos para darnos la bienvenida.
+        </p>
+
+        <!-- Párrafo H (Honor - Segundo Apellido) -->
+        <p class="mb-8 text-lg clear-both">
+            <span class="capitular-cierre">H</span>onor a quien sembró con sus manos este refugio y nos enseñó a amar esta tierra. Así nació <strong>El Limonar Eco Hotel</strong>; su nombre no es casualidad, es el testimonio vivo de su trabajo. Esta empresa es un acto de amor para honrar su memoria.
+        </p>
+
+        <!-- Párrafo P (Paz - El Broche de Oro / S.R.H.P.) -->
+        <p class="mb-12 text-lg clear-both">
+            <span class="capitular-cierre">P</span>az es lo que hoy, tras trece años de sembrar vida, tú finalmente puedes cosechar en nuestra casa.
+        </p>
+
+        <!-- Bloque de Firma CEO -->
+        <div class="mt-20 flex flex-col items-center text-center clear-both">
+            <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-6 bg-black p-2 shadow-2xl border-4 border-black flex items-center justify-center">
+                <img src="https://lh3.googleusercontent.com/d/1pucfuard5jEVGlabSm83RJO-m0M_HZ78" alt="Sello El Limonar" class="w-full h-full object-contain rounded-full sello-limpio">
+            </div>
+            <h4 class="text-xl font-bold text-[#2B4C0B]">Dirección General</h4>
+            <p class="text-[10px] uppercase tracking-[0.3em] opacity-50">Eco Hotel El Limonar S.A.S.</p>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-[#2B4C0B] text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+            <img src="https://lh3.googleusercontent.com/d/19uiPeYZMbfDSlvw-gnvFh8eY-0oQ-FEo" alt="Detalle El Limonar" class="w-20 md:w-32 mb-10 object-contain sello-limpio">
+            
+            <div class="flex gap-10 mb-12 opacity-80">
+                <a href="#" class="hover:text-amarillo-citrico transition-all hover:scale-110"><i class="fa-brands fa-instagram text-2xl"></i></a>
+                <a href="#" class="hover:text-amarillo-citrico transition-all hover:scale-110"><i class="fa-brands fa-facebook text-2xl"></i></a>
+                <a href="#" class="hover:text-amarillo-citrico transition-all hover:scale-110"><i class="fa-brands fa-whatsapp text-2xl"></i></a>
+            </div>
+            <p class="text-[10px] font-medium uppercase tracking-[0.6em] opacity-50">Preservando el legado • Montes de María, Sucre</p>
+        </div>
+    </footer>
+
+</body>
+</html>
